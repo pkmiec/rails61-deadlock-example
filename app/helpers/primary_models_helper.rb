@@ -1,0 +1,2 @@
+module PrimaryModelsHelper
+end

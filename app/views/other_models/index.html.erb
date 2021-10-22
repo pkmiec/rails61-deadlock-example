@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Other Models</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @other_models.each do |other_model| %>
+      <tr>
+        <td><%= other_model.name %></td>
+        <td><%= link_to 'Show', other_model %></td>
+        <td><%= link_to 'Edit', edit_other_model_path(other_model) %></td>
+        <td><%= link_to 'Destroy', other_model, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Other Model', new_other_model_path %>

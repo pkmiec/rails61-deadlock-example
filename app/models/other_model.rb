@@ -1,0 +1,2 @@
+class OtherModel < OtherRecord
+end
